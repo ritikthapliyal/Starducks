@@ -1,0 +1,292 @@
+.Home{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin: 4rem 0rem;
+
+    backdrop-filter: blur(4px);
+
+}
+
+.Home-{
+    padding: 4rem 2rem;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 2rem;
+
+    background-attachment: fixed;
+    background-size: contain;
+    background-image: linear-gradient(90deg,rgba(243, 245, 243, 0.853),rgba(233, 239, 234, 0.875)),url('../../Assets/back.jpg');
+
+    
+}
+
+
+
+/* /////////////////////////////////////////////////////////// */
+.Categories{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    height: fit-content;
+
+    background-color: #cdcdcd6b;
+    box-shadow: 0px 0px 12px #999696
+
+}
+
+
+
+/* /////////////////////////////////////////////////////////// */
+.Category{
+    width: 100%;
+    display: grid;
+    padding: 0.6rem;
+    gap: 1rem;
+    grid-template-columns: 1.5fr 3fr;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid #017d5b;
+    transition: all 0.5s;
+    background-color: #ffffffc2;
+}
+.Category img{
+    width: 100%;
+    border-radius: 50%;
+}
+.Category:hover{
+    background-color: #ebebebcc;
+}
+
+
+.selected-category{
+    color: white;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+.Food_Option{
+    width: 75%;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    column-gap: 2rem;
+    row-gap: 4rem;
+    transition: all 0.4s;
+}
+
+
+
+/* /////////////////////////////////////////////////////// */
+.Food{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 1.6rem;
+    box-shadow: 0px 0px 10px #E5E5E5;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.4s;
+    opacity: 0.95;
+
+    border: 1px solid rgb(222, 220, 220);
+    border-top: 0;
+
+    background-color: white;
+    position: relative;
+}
+.Food-bookmark{
+    position: absolute;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background-color: white;
+    top: 2%;
+    right: 2%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.9;
+}
+.Food-bookmark svg{
+    width: 60%;
+    height: 60%;
+    z-index: 101;
+}
+.Food-image-container{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.Food-image{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+
+    transition: 0.6s;
+}
+.Food-about{
+    height:60%;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.Food-desc{
+    color: inherit;
+    font-size: .7rem;
+}
+.Food:hover{
+    background-color: #418971;
+    color: white;
+    opacity: 1;
+}
+.Food:hover > .Food-image-container .Food-image{
+    scale: 1.2;
+}
+
+.Food-about div{
+    display: flex;
+    justify-content: space-between;
+}
+.Food-about button{
+    background-color: #134639e2;
+    color: white;
+    padding: .6rem 0.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.Food-about span{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+.Recommend{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 4rem 0rem;
+}
+.Recommend-components{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    overflow: hidden;
+
+    border-radius: 1rem;
+
+    background-attachment: fixed;
+    background-size: contain;
+    background-image: linear-gradient(90deg,rgba(243, 245, 243, 0.853),rgba(233, 239, 234, 0.875)),url('../../Assets/back.jpg');
+}
+.Recommend-wrapper{
+    display: flex;
+    gap: 4rem;
+    transition: all 1.3s;
+}
+.Recommend-wrapper::after{
+    content: "";
+    width: 34rem;
+}
+.Recommend button{
+    z-index: 100;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 40%;
+    border: none;
+    background-color: inherit;
+    border-radius: 50%;
+    background-color: #017d5b;
+    box-shadow: 0px 0px 14px #ababab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.Recommend button:hover{
+    background-color: #418971;
+    scale: 1.1;
+}
+.Recommend-btn-left{
+    left: 4%;
+}
+.Recommend-btn-right{
+    right: 3%;
+}
+.Recommend button svg{
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    scale: 0.9;
+}
+
+.RecommendedFood{
+    scale: 0.9;
+    width : 24rem;
+    height: 8rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px #e5e5e5;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    transition: all 0.5s;
+    background-color: white;
+    border-radius: 1rem;
+    gap: 1rem;
+
+    border: 1px solid #418971;
+    box-shadow: 0px 0px 14px #418971;
+
+    background-image: linear-gradient();
+    cursor: pointer;
+
+}
+.RecommendedFood:hover{
+    scale: 1.01;
+}
+.RecommendedFood img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.RecommendedFood-info{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 0.2rem;
+    justify-content: space-between;
+}
+
+
+
+

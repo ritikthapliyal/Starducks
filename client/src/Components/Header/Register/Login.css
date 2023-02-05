@@ -1,0 +1,51 @@
+.Login{
+    position: fixed;
+    top:50%;
+    left:50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    width: 60%;
+    height: 70%;
+
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+
+.Login h1{
+    position: absolute;
+    font-size:2rem;
+}
+.Login h1 span{
+    color: #017d5b;
+    font-size: 3rem;
+}
+
+.Login-Left,.Login-Right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+    align-items:flex-start;
+    justify-content: end;
+}
+
+
+.Login input{
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 1.4rem;
+}
+
+.Login button{
+    padding: 1rem;
+    background-color: #017d5b;
+    color: white;
+    border-radius: 2rem;
+    width: 40%;
+    align-self: left;
+    cursor: pointer;
+}

@@ -1,0 +1,303 @@
+.Header{
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: white;
+
+    box-shadow: 0px 1px 4px #0b0b0b36;
+}
+
+.Header h1{
+    color: inherit;
+}
+
+.Header-right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header-buttons, .Header-options{
+    display: flex;
+    gap: 1.2rem;
+}
+.Header-buttons{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: white;
+    cursor: pointer;
+}
+.Header-buttons img{
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+.Header-options{
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.Header-options a{
+    color: inherit;
+}
+
+
+.bag-with-item{
+    position: relative;
+}
+.bag-with-item span{
+    position: absolute;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    right: 0%;
+    top: 12%;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////// */
+
+.BagContents{
+    position: fixed;
+    top:50%;
+    left:50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+
+    width: 60%;
+    height: 70%;
+
+    padding:30px 50px;
+    border-radius: 4px;
+
+    overflow: hidden;
+
+}
+.Bag-Messages{
+    position: absolute;
+    bottom: 6%;
+}
+.BagContents-1{
+
+    width: 109%;
+    height: 72%;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.BagContents-1 h1{
+    color: #418971;
+    font-size: 1.6rem;
+}
+
+.Order{
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    padding-top: 1rem;
+    gap:1rem;
+}
+.quantity{
+    background-color: rgb(253, 244, 227);
+    width: 2.8rem;
+    height: 1.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.about-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.about-purchase{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.add-subs-container{
+    display: flex;
+    flex-direction: row;
+    gap:.2rem
+}
+
+.add,.subs{
+    text-align: center;
+    border: none;
+    background-color: white;
+    color: #fb4a2b;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+.add:hover,.subs:hover{
+    background-color:  #fb4a2b;
+    color: white;
+    border: black 1px solid;
+}
+
+
+
+.buy{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    gap: 1.2rem;
+    padding-top: 1rem;
+    position: fixed;
+    bottom: 6%;
+    right: 6%;
+    align-items: flex-end;
+}
+
+.total_span{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.order,.close{
+    height: 2.2rem;
+    width: 6rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: medium;
+    color: white;
+}
+.order{
+    background-color: #134639e2;
+}
+.close{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.order:hover{
+    background-color: #418971;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+.userOverlay-wrapper{
+        position: fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        z-index: 1000;
+        transition: all 0.8s;
+}
+.UserDashboard{
+    position: fixed;
+    top: 41%;
+    left: 78%;
+    background-color: white;
+    transform: translate(-34%,-45%);
+    z-index: 10000;
+    width: 26%;
+    height: 70%;
+    padding: 30px 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #b4aaaab5;
+    background-color: #d2faef;
+    overflow-y: scroll;
+}
+
+.UserDashboard button{
+    padding: 1rem;
+    background-color: #017d5b;
+    color: white;
+    border-radius: 2rem;
+    width: 70%;
+    align-self: left;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.UserDashboard button:hover{
+    background-color: #255b4c;
+}
+
+.page-userdashboard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    justify-content: space-between;
+}
+.page-userdashboard div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* //////////////////////////////////////////////////////// */
+.history-data-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.historyfood-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    border: 1px solid #8a8d8abf;
+    border-radius: 1rem;
+}
+.history-food{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    background-color:azure;
+    padding: 1rem;
+    justify-content: space-between;
+
+    gap: 0.5rem;
+    border-radius: 1rem;
+
+    align-items: center;
+}
+.history-food p{
+    color: #017d5b;
+}
+.history-food span{
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 2rem;
+}
+
